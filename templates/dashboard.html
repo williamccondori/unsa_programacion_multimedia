@@ -1,0 +1,129 @@
+{% extends 'layout.html'%} {% block titulo %} Dashboard {% endblock %} {% block contenido %}
+<div class="row">
+    <div class="col-xs-24 col-sm-24 col-md-24 col-lg-24">
+        <div role="tabpanel">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#point_operator" aria-controls="point_operator" role="tab" data-toggle="tab">Points operators</a>
+                </li>
+                <li role="presentation">
+                    <a href="#aritmethic_operator" aria-controls="aritmethic_operator" role="tab" data-toggle="tab">Aritmethic operators</a>
+                </li>
+                <li role="presentation">
+                    <a href="#logical_operator" aria-controls="logical_operator" role="tab" data-toggle="tab">Logical operators</a>
+                </li>
+                <li role="presentation">
+                    <a href="#geometric_operator" aria-controls="geometric_operator" role="tab" data-toggle="tab">Geometric operators</a>
+                </li>
+                <li role="presentation">
+                    <a href="#filter_operator" aria-controls="filter_operator" role="tab" data-toggle="tab">Filter operators</a>
+                </li>
+                <li role="presentation">
+                    <a href="#morphology_operator" aria-controls="morphology_operator" role="tab" data-toggle="tab">Morphology operators</a>
+                </li>
+                <li role="presentation">
+                    <a href="#other_operator" aria-controls="other_operator" role="tab" data-toggle="tab">Other operators</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="point_operator">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="panel-title">Points operators</span>
+                        </div>
+                        <div class="list-group">
+                            <a href="/point_operator/thresholding" class="list-group-item">Thresholding</a>
+                            <a href="/point_operator/histogram_equalization" class="list-group-item">Histogram equalization</a>
+                            <a href="/point_operator/contrast_stretching" class="list-group-item">Contrast stretching</a>
+                            <a href="/point_operator/logarithm" class="list-group-item">Logarithm</a>
+                            <a href="/point_operator/exponential" class="list-group-item">Exponential</a>
+                            <a href="/point_operator/raise_to_power" class="list-group-item">Raise to power</a>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="aritmethic_operator">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="panel-title">Aritmethic operators</span>
+                        </div>
+                        <div class="list-group">
+                            <a href="/aritmethic_operator/pixel_adition" class="list-group-item">Pixel adition</a>
+                            <a href="/aritmethic_operator/pixel_substraction" class="list-group-item">Pixel substraction</a>
+                            <a href="/aritmethic_operator/pixel_multiplication" class="list-group-item">Pixel multiplication</a>
+                            <a href="/aritmethic_operator/pixel_division" class="list-group-item">Pixel division</a>
+                            <a href="/aritmethic_operator/blending" class="list-group-item">Blending</a>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="logical_operator">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="panel-title">Logical operators</span>
+                        </div>
+                        <div class="list-group">
+                            <a href="/logical_operator/invert" class="list-group-item">Invert</a>
+                            <a href="/logical_operator/and" class="list-group-item">And</a>
+                            <a href="/logical_operator/or" class="list-group-item">Or</a>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="geometric_operator">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="panel-title">Geometric operators</span>
+                        </div>
+                        <div class="list-group">
+                            <a href="/geometric_operator/translate" class="list-group-item">Translate</a>
+                            <a href="/geometric_operator/scale" class="list-group-item">Scale</a>
+                            <a href="/geometric_operator/rotate" class="list-group-item">Rotate</a>
+                            <a href="/geometric_operator/shear" class="list-group-item">Shear</a>
+                            <a href="/geometric_operator/twirl" class="list-group-item">Twirl</a>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="filter_operator">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="panel-title">Filters operators</span>
+                        </div>
+                        <div class="list-group">
+                            <a href="/filter_operator/mean" class="list-group-item">Mean</a>
+                            <a href="/filter_operator/median" class="list-group-item">Median</a>
+                            <a href="/filter_operator/gaussian" class="list-group-item">Gaussian</a>
+                            <a href="/filter_operator/conservative" class="list-group-item">Conservative</a>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="morphology_operator">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="panel-title">Morphology operators</span>
+                        </div>
+                        <div class="list-group">
+                            <a href="/morphology_operator/erotion" class="list-group-item">Erotion</a>
+                            <a href="/morphology_operator/dilation" class="list-group-item">Dilation</a>
+                            <a href="/morphology_operator/opening" class="list-group-item">Opening</a>
+                            <a href="/morphology_operator/closing" class="list-group-item">Closing</a>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="other_operator">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="panel-title">Others</span>
+                        </div>
+                        <div class="list-group">
+                            <a href="/other_operator/fourier" class="list-group-item">Fourier</a>
+                            <a href="/other_operator/wavelets" class="list-group-item">Wavelets</a>
+                            <a href="/other_operator/border" class="list-group-item">Border</a>
+                            <a href="/other_operator/sift" class="list-group-item">Sift</a>
+                            <a href="/other_operator/hog" class="list-group-item">Hog</a>
+                            <a href="/other_operator/selective_search" class="list-group-item">Selective search</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

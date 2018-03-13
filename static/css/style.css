@@ -1,0 +1,24 @@
+body{
+    
+}
+
+.margen-top{
+    margin-top: 20px;
+}
+
+label{
+    font-weight: bold;
+}
+
+.app-dashboard-title h1{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.app-dashboard-title p{
+    font-size: 14px;
+}
+
+.app-alerta{
+    margin-bottom: 0;
+}
